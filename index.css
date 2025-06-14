@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Reddit+Sans:ital,wght@0,200..900;1,200..900&display=swap');
+
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+  
+  /* 2. Remove default margin */
+* {
+    font-family: "Reddit Sans", sans-serif;
+    margin: 0;
+}
+  
+body{
+    background: #1F2937;
+    
+    color: #F9FAFB;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 2em;
+    .txt{
+        font-size: 1.5em;
+    }
+}
+
+.generate-text{
+    margin-bottom: -.4em;
+    font-weight: 900;
+    color: #F9FAFB;
+    font-size: 5em;
+}
+
+.gen-btn{
+    border: none;
+    background-color: #EEB31B;
+    font-weight: 600;
+    font-size: 1em;
+    color: #F9FAFB;
+    padding: .5em 1em;
+    margin-top: 1.5em;
+    border-radius: 5px;
+    &:hover{
+        background-color: #FDA91C;
+    }
+    &:active{
+        background-color: #D97706;
+    }
+}
+.options-btn{
+    border: none;
+    background: #EEB31B;
+    font-weight: 600;
+    color: #F9FAFB;
+    padding: .5em 1em;
+    border-radius: 5px;
+    margin-bottom: 3em;
+    &:hover{
+        background-color: #FDA91C;
+    }
+    &:active{
+        background-color: #D97706;
+    }
+}
+.rand-password{
+    font-weight: 900;
+    color: #FBBF24;
+    font-size: 5em;
+}
+#container-genpass{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+    margin-left: 2em;
+    border-radius: 10px;
+    background: #111827;
+    max-width: 100vh;
+    padding: 1em;
+    
+}
+
+.pass-box{
+    background-color: #273549;
+    width: fit-content;
+    border-radius: 5px;
+    padding: .5em 1em;
+}
