@@ -86,6 +86,9 @@ body{
 
 .pass-box{
     background-color: #273549;
+    border: none;
+    color: #F9FAFB;
+    font-size: large;
     width: fit-content;
     border-radius: 5px;
     padding: .5em 1em;

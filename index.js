@@ -12,7 +12,7 @@ function reset(){
 function generatePassword(){
     var passString = ""
     divEl.classList.remove("hidden")
-    var pEl = document.createElement("p")
+    var pEl = document.createElement("button")
     for(let i = 0; i < 15; i++){
         let randNo = Math.floor(Math.random() * characters.length)
         passString += characters[randNo]
@@ -20,6 +20,17 @@ function generatePassword(){
     }
     pEl.appendChild(document.createTextNode(passString))
     pEl.classList.add("pass-box")
+    pEl.addEventListener('click', async(e) => {
+        const clickedButtonText = e.target.innerText
+        try{
+            await navigator.clipboard.writeText(clickedButtonText)
+
+            alert("Copied to clipboard!")
+        } catch (err){
+            console.error("Failed to copy", err)
+        }
+        
+    })
     divEl.appendChild(pEl)
     console.log(password)
 }
