@@ -41,6 +41,7 @@ body{
     color: #F9FAFB;
     padding: .5em 1em;
     margin-top: 1.5em;
+    margin-right: 10px;
     border-radius: 5px;
     &:hover{
         background-color: #FDA91C;
@@ -78,7 +79,9 @@ body{
     background: #111827;
     max-width: 100vh;
     padding: 1em;
-    
+}
+.hidden{
+    visibility: hidden;
 }
 
 .pass-box{

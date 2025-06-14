@@ -3,8 +3,15 @@ const characters = ["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O"
 let divEl = document.getElementById("container-genpass")
 let counter = 0
 
+function reset(){
+    let elements = document.querySelectorAll(".pass-box")
+    elements.forEach(el => el.remove())
+    divEl.classList.add("hidden")
+}
+
 function generatePassword(){
     var passString = ""
+    divEl.classList.remove("hidden")
     var pEl = document.createElement("p")
     for(let i = 0; i < 15; i++){
         let randNo = Math.floor(Math.random() * characters.length)

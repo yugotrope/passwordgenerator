@@ -8,13 +8,16 @@
 </head>
 <body>
     <div class="container">
-        <button class="options-btn">Options</button>
+        <button class="options-btn hidden">Options</button>
         <h1 class="generate-text">Generate a</h1>
         <h1 class="rand-password">random password</h1>
         <p class="txt">Never use an unsecure password ever again.</p>
-        <button class="gen-btn" onclick="generatePassword()">Generate passwords</button>
+        <div>
+            <button class="gen-btn" onclick="generatePassword()">Generate password</button>
+            <button class="gen-btn" onclick="reset()">Reset</button>
+        </div>
     </div>
-    <div id="container-genpass">
+    <div id="container-genpass" class="hidden">
     </div>
     <script src="index.js"></script>
 </body>
